@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Security Alert</title>
+    <style>
+        body {
+            font-family: Segoe UI, Tahoma, Geneva, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            width: 400px;
+            text-align: center;
+            border: 1px solid #0078d4;
+        }
+        h1 {
+            color: #0078d4;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        p {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        button {
+            background-color: #0078d4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #005a9e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Microsoft Security Alert</h1>
+        <p><strong>Warning:</strong> A virus has been detected on your computer.</p>
+        <p>To prevent data loss, please follow the instructions below:</p>
+        <ol>
+            <li>Click the "Remove Virus" button below.</li>
+            <li>Follow the on-screen instructions.</li>
+            <li>Ensure your antivirus software is updated.</li>
+        </ol>
+        <button id="removeVirus">Remove Virus</button>
+        <p style="margin-top: 20px;">This is a serious warning. Please act immediately.</p>
+    </div>
+
+    <script>
+        document.getElementById('removeVirus').addEventListener('click', function() {
+            alert('The virus has been removed successfully! Just kidding, this is a harmless prank.');
+            document.querySelector('.container').innerHTML = '<h1>Thank You!</h1><p>This was just a prank. You are safe! Always stay secure online.</p>';
+        });
+    </script>
+</body>
+</html>
